@@ -8,7 +8,7 @@ from ..utils.highlights_remover import remove_highlights
 
 class KamiSpider(scrapy.Spider):
     name = 'kami'
-    start_urls = ['file:///Users/jamesesguerra/thesis/kami.html']
+    # start_urls = ['https://buod.netlify.app/']
 
 
     def __init__(self, **kwargs):
