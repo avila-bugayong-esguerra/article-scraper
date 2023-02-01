@@ -10,8 +10,8 @@ from ..utils.highlights_remover import remove_highlights
 class KamiSpider(scrapy.Spider):
     name = 'kami'
     print(os.getcwd())
-    # start_urls = [f'file://{os.getcwd()}/spiders/index.html']
-    start_urls = ['file:///Users/jamesesguerra/Thesis/5000.html']
+    start_urls = [f'file://{os.getcwd()}/3000.html']
+    
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs) 
