@@ -1,3 +1,4 @@
+import os
 import scrapy
 from langdetect import detect
 
@@ -8,8 +9,9 @@ from ..utils.highlights_remover import remove_highlights
 
 class KamiSpider(scrapy.Spider):
     name = 'kami'
-    # start_urls = ['https://buod.netlify.app/']
-
+    print(os.getcwd())
+    # start_urls = [f'file://{os.getcwd()}/spiders/index.html']
+    start_urls = ['file:///Users/jamesesguerra/Thesis/5000.html']
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs) 
